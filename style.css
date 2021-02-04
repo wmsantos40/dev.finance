@@ -19,7 +19,8 @@ body {
 }
 
 .sr-only {
-    position: absolute;
+    position: fixed;
+    /*position: absolute;*/
     width: 1px;
     height: 1px;
     padding: 0;
@@ -294,7 +295,8 @@ input {
 /* footer ========================*/
 
 footer {
-    position:static;
+    position: sticky;
+    bottom: 0;
     width: 100%;
     
     background-image: linear-gradient(to top, #04befe 100%,  #4481eb 0%);
