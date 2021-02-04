@@ -107,7 +107,7 @@ header {
     text-align: center;
 }
 
-#logo {
+.logo {
     color: #fff;
     font-weight: 100;
 }
@@ -234,6 +234,8 @@ td.expense {
 
     opacity: 0;
     visibility: hidden;
+
+    z-index: 999;
 }
 
 .modal-overlay.active {
@@ -244,7 +246,11 @@ td.expense {
 
 .modal {
     background: #F0F2f5;
-    padding: 2.4rem;     
+    padding: 2.4rem;   
+    
+    position: relative;
+
+    z-index: 1;
 }
 
 /* form ==========================*/
@@ -288,13 +294,17 @@ input {
 /* footer ========================*/
 
 footer {
+    position:static;
+    width: 100%;
     
     background-image: linear-gradient(to top, #04befe 100%,  #4481eb 0%);
+    
     text-align: center;
     padding: 1.4rem 0 1.4rem;
-    color: var(--dark-blue);
-   
+    color: var(--dark-blue); 
+  
 }
+
 
 /* Responsive ========================*/
 @media (min-width: 800px){
